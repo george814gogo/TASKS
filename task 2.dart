@@ -1,24 +1,25 @@
   //  import 'dart:vmservice_io';
  import 'dart:io';
 
-void task1 ( ) {
-print("enter your name and password  ");
-    String name = stdin.readLineSync()??"name";
-  String password = stdin.readLineSync()??"pass";
-  bool isActive = stdin.readLineSync() =="true";
-    name == "student"&& password=="iti123" && isActive ==true?print ('Login Successful'):print ("Access Denied");
+void task2 ( ) {
+   print ("enter price , if Premium or hasCoupon");
+      double price = double.parse(stdin.readLineSync()!);
+        bool discount = stdin.readLineSync() =="true";
+if (discount){
+    double finalPrice = price*0.85;
+print (finalPrice);
 }
- void task2 ( ) {
-    
-     print ("gender is  name is  ");}
+else{
+  print(price);
+}
+}
+ 
     
 
 void main() {
 
 
-       print ("gender is  name is  ");
-
-   task1 ();
+   task2 ();
 
 
 
